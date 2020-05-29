@@ -26,7 +26,8 @@
     <!-- 轮播图 结束 -->
     <!-- 导航 开始 -->
     <view class="index_cate">
-        <navigator wx:for="{{catesList}}" wx:key="name" url="/pages/category/index" open-type="switchTab">
+        <!-- 要加上 open-type="switchTab" 才能跳转到tab页面 -->
+        <navigator wx:for="{{catList}}" wx:key="name" url="/pages/category/index" open-type="switchTab">
             <image mode="widthFix" src="{{item.image_src}}"></image>
         </navigator>
     </view>

@@ -27,25 +27,27 @@
                     </checkbox-group>
                 </view>
                 <!-- 商品图片 -->
-                <navigator class="cart_img_wrap">
-                    <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
-                </navigator>
-                <!-- 商品信息 -->
-                <view class="cart_info_wrap">
-                    <view class="goods_name">{{item.goods_name}}</view>
-                    <view class="goods_price_wrap">
-                        <view class="goods_price">￥{{item.goods_price}}</view>
-                        <view class="cart_num_tool">
-                            <view bindtap="handleItemNumEdit" data-id="{{item.goods_id}}" data-operation="{{-1}}" class="num_edit">
-                                -
-                            </view>
-                            <view class="goods_num">{{item.num}}</view>
-                            <view bindtap="handleItemNumEdit" data-id="{{item.goods_id}}" data-operation="{{1}}" class="num_edit">
-                                +
+                <navigator class="cart_img_wrap_box" target="" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+                    <view class="cart_img_wrap">
+                        <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
+                    </view>
+                    <!-- 商品信息 -->
+                    <view class="cart_info_wrap">
+                        <view class="goods_name">{{item.goods_name}}</view>
+                        <view class="goods_price_wrap">
+                            <view class="goods_price">￥{{item.goods_price}}</view>
+                            <view class="cart_num_tool">
+                                <view bindtap="handleItemNumEdit" data-id="{{item.goods_id}}" data-operation="{{-1}}" class="num_edit">
+                                    -
+                                </view>
+                                <view class="goods_num">{{item.num}}</view>
+                                <view bindtap="handleItemNumEdit" data-id="{{item.goods_id}}" data-operation="{{1}}" class="num_edit">
+                                    +
+                                </view>
                             </view>
                         </view>
                     </view>
-                </view>
+                </navigator>
             </view>
         </block>
         <block wx:else>

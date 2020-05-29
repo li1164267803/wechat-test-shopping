@@ -1,68 +1,59 @@
 .index_swiper {
-    swiper {
-        width: 750rpx;
-        height: 340rpx;
-
-        image {
-            width: 100%;
-        }
+  swiper {
+    width: 750rpx;
+    height: 340rpx;
+    image {
+      width: 100%;
     }
+  }
 }
 
-
 .index_cate {
-    display: flex;
-
-    navigator {
-        padding: 20rpx;
-        flex: 1;
-
-        image {
-            width: 100%;
-        }
+  display: flex;
+  navigator {
+    padding: 20rpx;
+    flex: 1;
+    image {
+      width: 100%;
     }
+  }
 }
 
 .index_floor {
-
-    .floor_group {
-        .floor_title {
-            padding: 10rpx 0;
-
-            image {
-                width: 100%;
-            }
-        }
-
-        .floor_list {
-            // 清除浮动
-            overflow: hidden;
-
-            navigator {
-                float: left;
-                width: 33.33%;
-
-                /* 后四个超链接 */
-                &:nth-last-child(-n+4) {
-                    /* 原图的宽高 232 *386 */
-                    // 232 / 386 = 33.33vw / height
-                    // 第一张图片的高度 height:33.33vw * 386 /  232
-                    height: 33.33vw * 386 / 232 /2;
-
-                    border-left: 10rpx solid #fff;
-                }
-
-                /* 2 3 两个超链接 */
-                &:nth-child(2),
-                &:nth-child(3) {
-                    border-bottom: 10rpx solid #fff;
-                }
-
-                image {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
+  .floor_group {
+    .floor_title {
+      padding: 10rpx 0;
+      image {
+        width: 100%;
+      }
     }
+    .floor_list {
+      // 清除浮动
+      overflow: hidden;
+      navigator {
+        float: left;
+        width: 33.33%;
+
+        /* 后四个超链接 */
+        &:nth-last-child(-n + 4) {
+          /* 原图的宽高 232 *386 */
+          // 232 / 386 = 33.33vw / height
+          // 第一张图片的高度 height:33.33vw * 386 /  232
+          height: 33.33vw * 386 / 232 /2;
+
+          border-left: 10rpx solid #fff;
+        }
+
+        /* 2 3 两个超链接 */
+        &:nth-child(2),
+        &:nth-child(3) {
+          border-bottom: 10rpx solid #fff;
+        }
+        image {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
 }

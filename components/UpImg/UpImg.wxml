@@ -1,0 +1,6 @@
+<view class="up_img_wrap_box">
+    <view wx:for="{{chooseImgs}}" wx:key="*this" class="up_img_wrap">
+        <image src="{{item}}" bind:tap="handleSeeImg" data-index="{{index}}"></image>
+        <icon type="clear" size="23" color="red" bind:tap="handleClearImg" data-index="{{index}}"></icon>
+    </view>
+</view>

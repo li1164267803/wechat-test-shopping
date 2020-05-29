@@ -36,6 +36,11 @@ page {
   justify-content: center;
   align-items: center;
 }
+.cart_content .cart_main .cart_item .cart_img_wrap_box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .cart_content .cart_main .cart_item .cart_img_wrap {
   flex: 2;
   display: flex;

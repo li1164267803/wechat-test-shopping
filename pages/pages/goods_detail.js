@@ -1,4 +1,4 @@
-// pages/feedback/index.js
+// pages//pages/goods_detail.js
 Page({
 
   /**

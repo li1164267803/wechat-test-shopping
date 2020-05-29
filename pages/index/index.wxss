@@ -30,7 +30,7 @@
   /* 后四个超链接 */
   /* 2 3 两个超链接 */
 }
-.index_floor .floor_group .floor_list navigator:nth-last-child(-n+4) {
+.index_floor .floor_group .floor_list navigator:nth-last-child(-n + 4) {
   /* 原图的宽高 232 *386 */
   height: 27.72711207vw;
   border-left: 10rpx solid #fff;

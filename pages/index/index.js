@@ -25,6 +25,9 @@ Page({
     get({
       url: "/home/swiperdata",
     }).then((res) => {
+      res.forEach((v) => {
+        v.navigator_url = v.navigator_url.replace(/\/main\?/g, "/index?");
+      });
       this.setData({
         swiperList: res,
       });
@@ -43,6 +46,11 @@ Page({
     get({
       url: "/home/floordata",
     }).then((res) => {
+      res.forEach((v) => {
+        v.product_list.forEach((item) => {
+          item.navigator_url = item.navigator_url.replace(/\?/g, "/index?");
+        });
+      });
       this.setData({
         floorList: res,
       });

@@ -6,10 +6,8 @@
     "pages/goods_detail/index",
     "pages/cart/index",
     "pages/collect/index",
-    "pages/order/index",
     "pages/search/index",
     "pages/user/index",
-    "pages/feedback/index",
     "pages/login/index",
     "pages/auth/index",
     "pages/pay/index"
@@ -53,7 +51,12 @@
       }
     ]
   },
+  "subPackages": [
+    {
+      "root": "pages/subcontract",
+      "pages": ["feedback/index"]
+    }
+  ],
 
-  "style": "v2",
   "sitemapLocation": "sitemap.json"
 }
