@@ -1,5 +1,5 @@
 //Page Object
-import { get } from "../../request/index";
+import { get } from "../../../request/index";
 Page({
   data: {
     swiperList: [],

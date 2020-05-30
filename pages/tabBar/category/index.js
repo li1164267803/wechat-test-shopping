@@ -1,5 +1,5 @@
-import { get } from "../../request/index.js";
-import regeneratorRuntime from "../../lib/runtime/runtime";
+import { get } from "../../../request/index.js";
+import regeneratorRuntime from "../../../lib/runtime/runtime";
 Page({
   data: {
     // 左侧的菜单数据

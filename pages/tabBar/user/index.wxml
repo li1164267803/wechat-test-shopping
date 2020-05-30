@@ -35,15 +35,15 @@
         <view class="orders_wrap">
             <view class="orders_title">我的订单</view>
             <view class="order_content">
-                <navigator url="/pages/subcontract/order/index?type=1">
+                <navigator url="/pages/mySubcontract/order/index?type=1">
                     <view class="iconfont icon-ding_dan"></view>
                     <view class="order_name">全部订单</view>
                 </navigator>
-                <navigator url="/pages/subcontract/order/index?type=2">
+                <navigator url="/pages/mySubcontract/order/index?type=2">
                     <view class="iconfont icon-fukuantongzhi"></view>
                     <view class="order_name">待付款</view>
                 </navigator>
-                <navigator url="/pages/subcontract/order/index?type=3">
+                <navigator url="/pages/mySubcontract/order/index?type=3">
                     <view class="iconfont icon-receipt-address"></view>
                     <view class="order_name">待收货</view>
                 </navigator>
@@ -61,7 +61,7 @@
                 <text>联系客服</text>
                 <text>400-618-4000</text>
             </view>
-            <navigator url="/pages/subcontract/feedback/index" class="app_info_item">
+            <navigator url="/pages/mySubcontract/feedback/index" class="app_info_item">
                 意见反馈
             </navigator>
             <view class="app_info_item">关于我们</view>

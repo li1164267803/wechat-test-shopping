@@ -79,9 +79,9 @@
 					"scene": null
 				},
 				{
-					"id": -1,
+					"id": 3,
 					"name": "购物车",
-					"pathName": "pages/cart/index",
+					"pathName": "pages/tabBar/cart/index",
 					"query": "goods_id=43982",
 					"scene": null
 				},

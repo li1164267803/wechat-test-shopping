@@ -27,7 +27,7 @@
                     </checkbox-group>
                 </view>
                 <!-- 商品图片 -->
-                <navigator class="cart_img_wrap_box" target="" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
+                <navigator class="cart_img_wrap_box" hover-class="none" target="" url="/pages/goods_detail/index?goods_id={{item.goods_id}}">
                     <view class="cart_img_wrap">
                         <image mode="widthFix" src="{{item.goods_small_logo}}"></image>
                     </view>
@@ -37,11 +37,12 @@
                         <view class="goods_price_wrap">
                             <view class="goods_price">￥{{item.goods_price}}</view>
                             <view class="cart_num_tool">
-                                <view bindtap="handleItemNumEdit" data-id="{{item.goods_id}}" data-operation="{{-1}}" class="num_edit">
+                                <!-- bind事件绑定不会阻止冒泡事件向上冒泡，catch事件绑定可以阻止冒泡事件向上冒泡。 -->
+                                <view catch:tap="handleItemNumEdit" data-id="{{item.goods_id}}" data-operation="{{-1}}" class="num_edit">
                                     -
                                 </view>
                                 <view class="goods_num">{{item.num}}</view>
-                                <view bindtap="handleItemNumEdit" data-id="{{item.goods_id}}" data-operation="{{1}}" class="num_edit">
+                                <view catch:tap="handleItemNumEdit" data-id="{{item.goods_id}}" data-operation="{{1}}" class="num_edit">
                                     +
                                 </view>
                             </view>
